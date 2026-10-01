@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20211e">
+  <meta name="description" content="Explore carefully selected property opportunities in Ibadan with Polyproperty. Speak with our team to confirm details and arrange an inspection.">
+  <title>Polyproperty | Property, considered.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Polyproperty home">
+      <span class="wordmark-mark" aria-hidden="true">P</span>
+      <span>polyproperty<small>PROPERTY, CONSIDERED.</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="#opportunities">Properties</a>
+      <a href="#approach">Our approach</a>
+      <a href="#invest">For investors</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Speak with an agent <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home-view">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Contemporary home surrounded by mature trees"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> IBADAN PROPERTY, WITH PERSPECTIVE</p>
+        <h1 id="hero-title">Find the Right Property.<br><em>Make the Right Move.</em></h1>
+        <p class="hero-copy">Explore carefully selected properties across Ibadan and connect with our team for enquiries and inspections.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#opportunities">View properties <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="#contact">Contact an agent <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-caption"><span>01 / IBADAN, OYO STATE</span><span>PROPERTY OPPORTUNITIES, PERSONALLY CONSIDERED</span></div>
+      <a class="hero-scroll" href="#search" aria-label="Scroll to property search">↓</a>
+    </section>
+
+    <section class="search-section" id="search" aria-labelledby="search-title">
+      <div class="search-intro">
+        <p class="eyebrow">A MORE CONSIDERED SEARCH</p>
+        <h2 id="search-title">What does your next move look like?</h2>
+        <p>Share a few details. We’ll use them to guide a conversation about verified opportunities.</p>
+      </div>
+      <form class="search-form" id="property-search">
+        <label>Looking to
+          <select name="transaction">
+            <option value="">Buy or rent</option>
+            <option>Buy</option>
+            <option>Rent</option>
+          </select>
+        </label>
+        <label>Property type
+          <select name="type">
+            <option value="">Any property type</option>
+            <option>Luxury home</option>
+            <option>House</option>
+            <option>Land or plot</option>
+            <option>Investment property</option>
+            <option>Commercial property</option>
+          </select>
+        </label>
+        <label>Preferred area
+          <input name="location" type="text" placeholder="Area or neighbourhood">
+        </label>
+        <label>Budget
+          <select name="budget">
+            <option value="">Any budget</option>
+            <option>Under ₦100M</option>
+            <option>₦100M – ₦200M</option>
+            <option>₦200M – ₦400M</option>
+            <option>₦400M+</option>
+          </select>
+        </label>
+        <label>Bedrooms
+          <select name="bedrooms">
+            <option value="">Any</option>
+            <option>1 bedroom</option><option>2 bedrooms</option><option>3 bedrooms</option>
+            <option>4 bedrooms</option><option>5+ bedrooms</option>
+          </select>
+        </label>
+        <button class="button button-dark" type="submit">Find my property <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="search-note" id="search-note" aria-live="polite">We confirm availability, asking price and property details directly with our team.</p>
+    </section>
+
+    <section class="opportunities section-wrap" id="opportunities" aria-labelledby="opportunities-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">A STARTING POINT, NOT A STOCK LIST</p><h2 id="opportunities-title">Explore property opportunities</h2></div>
+        <p>Tell us what you have in mind. We’ll share current, verified options and the information you need to move forward.</p>
+      </div>
+      <div class="property-grid" id="property-grid" aria-live="polite"></div>
+      <p class="image-disclaimer">Photography is representative. We do not publish unverified property listings; price, address, specifications and availability are confirmed before an inspection.</p>
+    </section>
+
+    <section class="categories" aria-labelledby="categories-title">
+      <div class="section-wrap categories-inner">
+        <div class="categories-heading"><p class="eyebrow">PROPERTY, FOR EVERY KIND OF NEXT STEP</p><h2 id="categories-title">Find your point<br>of possibility.</h2></div>
+        <div class="category-list">
+          <a href="#opportunities" data-category="Luxury home"><span>01</span> Luxury homes <b aria-hidden="true">↗</b></a>
+          <a href="#opportunities" data-category="House"><span>02</span> Houses for sale <b aria-hidden="true">↗</b></a>
+          <a href="#opportunities" data-category="Land or plot"><span>03</span> Land &amp; plots <b aria-hidden="true">↗</b></a>
+          <a href="#opportunities" data-category="Investment property"><span>04</span> Investment properties <b aria-hidden="true">↗</b></a>
+          <a href="#opportunities" data-category="Commercial property"><span>05</span> Commercial properties <b aria-hidden="true">↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach section-wrap" id="approach" aria-labelledby="approach-title">
+      <div class="approach-image" role="img" aria-label="Sunlit, thoughtfully designed contemporary living space"></div>
+      <div class="approach-copy">
+        <p class="eyebrow">A LOCAL PARTNER, THROUGH EVERY DETAIL</p>
+        <h2 id="approach-title">Good property decisions start with good guidance.</h2>
+        <p>Polyproperty is an Ibadan real estate company helping buyers and investors find property opportunities suited to their needs. We bring a local perspective to the search, and a considered approach to every conversation.</p>
+        <a class="text-link" href="#contact">Get to know our team <span aria-hidden="true">↗</span></a>
+        <div class="trust-list">
+          <div><span>01</span><strong>Verified property opportunities</strong></div>
+          <div><span>02</span><strong>Local market knowledge</strong></div>
+          <div><span>03</span><strong>Professional guidance</strong></div>
+          <div><span>04</span><strong>Inspection support</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="investment" id="invest" aria-labelledby="investment-title">
+      <div class="investment-image" role="img" aria-label="Modern residential architecture in warm afternoon light"></div>
+      <div class="investment-content">
+        <p class="eyebrow">A PROPERTY SEARCH WITH A BIGGER PICTURE</p>
+        <h2 id="investment-title">Looking Beyond<br>a Property?</h2>
+        <p>Tell us what you want your investment to do. Our team can help identify Ibadan property opportunities around your goals, budget and timeline.</p>
+        <a class="button button-gold" href="#contact">Talk through your goals <span aria-hidden="true">↗</span></a>
+      </div>
+      <span class="investment-index" aria-hidden="true">PP / 02</span>
+    </section>
+
+    <section class="voices section-wrap" aria-labelledby="voices-title">
+      <div class="voices-copy"><p class="eyebrow">BUILT ON TRUST, NOT PROMISES</p><h2 id="voices-title">A considered experience, from first question to inspection.</h2></div>
+      <div class="voices-note"><span class="quote-mark" aria-hidden="true">“</span><p>We’re building a service worth talking about. For now, we’d rather let you hear directly from our team than publish client comments without permission.</p><a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="journal" aria-labelledby="journal-title">
+      <div class="section-wrap journal-head">
+        <div><p class="eyebrow">A CLOSER LOOK AT THE WAY WE SEE PROPERTY</p><h2 id="journal-title">The property journal</h2></div>
+        <p>An editorial preview of our property stories. Representative photography, not listings; Instagram showcase coming soon.</p>
+      </div>
+      <div class="journal-grid" aria-label="Representative property photography">
+        <figure><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Calm, light-filled contemporary living room" loading="lazy"><figcaption><span>SPACES</span><span>01</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Modern residence set among greenery" loading="lazy"><figcaption><span>ARCHITECTURE</span><span>02</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Contemporary interior with warm natural finishes" loading="lazy"><figcaption><span>DETAILS</span><span>03</span></figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Refined interior with understated materials" loading="lazy"><figcaption><span>POINT OF VIEW</span><span>04</span></figcaption></figure>
+      </div>
+      <div class="journal-footer"><span>For current property updates, speak directly with our team.</span><a class="text-link" href="#contact">Ask for property updates <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="enquiry" id="contact" aria-labelledby="contact-title">
+      <div class="enquiry-intro">
+        <p class="eyebrow">LET’S GET THE DETAILS RIGHT</p>
+        <h2 id="contact-title">Tell us what<br>you’re looking for.</h2>
+        <p>Share your brief. A Polyproperty agent will follow up to understand what matters and discuss suitable next steps.</p>
+        <div class="contact-details"><span>POLYPROPERTY</span><span>Ibadan, Oyo State, Nigeria</span><a href="tel:+2349157754404">+234 915 775 4404</a></div>
+      </div>
+      <form class="enquiry-form" id="enquiry-form">
+        <div class="form-row"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+        <div class="form-row"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number"></div>
+        <div class="form-row"><label for="interest">Property interested in</label><input id="interest" name="interest" required placeholder="Type, area or listing reference"></div>
+        <div class="form-row"><label for="enquiry-budget">Budget</label><input id="enquiry-budget" name="budget" placeholder="Your preferred budget"></div>
+        <div class="form-row"><label for="message">A little more about your search</label><textarea id="message" name="message" rows="3" placeholder="Timing, requirements or questions"></textarea></div>
+        <div class="form-actions"><button class="button button-gold" type="submit">Request property information <span aria-hidden="true">↗</span></button><a class="whatsapp-link" href="https://wa.me/2349157754404" target="_blank" rel="noreferrer"><span aria-hidden="true">◉</span> Chat on WhatsApp</a></div>
+        <p class="form-note" id="form-note" aria-live="polite">Your request opens a WhatsApp message so you can review it before sending.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <main id="detail-view" class="detail-view" hidden>
+    <div class="detail-breadcrumb section-wrap"><a href="index.html#opportunities">← All opportunities</a><span>IBADAN, OYO STATE</span></div>
+    <div id="property-detail"></div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">P</span><span>polyproperty<small>PROPERTY, CONSIDERED.</small></span></a>
+    <p>Property, considered.<br>Ibadan, Oyo State, Nigeria.</p>
+    <a href="tel:+2349157754404">+234 915 775 4404</a>
+    <span class="copyright">© <span id="year"></span> Polyproperty</span>
+  </footer>
+</body>
+</html>
